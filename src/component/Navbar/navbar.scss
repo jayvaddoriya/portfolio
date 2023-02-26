@@ -1,0 +1,202 @@
+@import "../../styles/globle.scss";
+.header {
+  width: 100%;
+  background: $blackColor !important;
+  padding-inline: 0px !important;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    height: 82px !important;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .hamBurgerMenu {
+    display: none;
+    @media (max-width: 834px) {
+      display: inherit;
+      svg {
+        width: 40px;
+      }
+    }
+    @media (max-width: 425px) {
+      svg {
+        width: 40px;
+      }
+    }
+  }
+
+  .allNavLinks {
+    display: flex;
+    gap: 40px;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    .span {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+    }
+    .mainCard {
+      display: flex;
+    }
+
+    @media (max-width: 1024px) {
+      gap: 30px;
+    }
+
+    .navLink {
+      color: $whiteColor;
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      transition: all 0.5s ease-in-out;
+      font-family: $primary-font !important;
+      text-decoration: none;
+      @media (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+    }
+    .activeClassName {
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      color: $whiteColor;
+      transition: all 0.5s ease-in-out;
+      font-family: $primary-font !important;
+      text-decoration: none;
+      @media (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+    }
+    @media (max-width: 834px) {
+      display: none;
+    }
+  }
+}
+.drawerMenu {
+  .mobileNavLinks {
+    padding: 0 44px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 425px) {
+      padding: 0 18px !important;
+    }
+    .navLink {
+      color: $blackColor;
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      border-bottom: 2px solid #eeeeee;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 834px) {
+        svg {
+          width: 22px;
+        }
+      }
+      @media (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+      &:hover {
+        color: $primaryColor !important;
+        font-weight: 500 !important;
+        @media (max-width: 1024px) {
+          font-size: 18px !important;
+        }
+      }
+    }
+    .activeClassName {
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      color: $primaryColor;
+      border-bottom: 2px solid #eeeeee;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+      @media (max-width: 768px) {
+        height: 60px;
+      }
+    }
+  }
+  .dropDownAndLogin {
+    background-color: #f8f8f8;
+    padding: 0px 44px;
+    margin-top: 20px;
+    @media (max-width: 425px) {
+      padding: 0px 10px;
+    }
+    .selectDown {
+      border-bottom: 2px solid #eeeeee;
+      div {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+        border: none !important;
+        font-family: $primary-font;
+        font-weight: 500 !important;
+        font-size: 18px;
+        line-height: 33px;
+        color: $placeHolderTextColor !important;
+      }
+    }
+    .logOutBtn {
+      height: 64px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f8f8f8;
+      border: none !important;
+      font-family: $primary-font;
+      font-weight: 400 !important;
+      font-size: 18px;
+      line-height: 33px;
+      padding: 0 10px;
+      span {
+        color: $placeHolderTextColor !important;
+      }
+    }
+  }
+  .btns {
+    padding: 0 44px;
+    margin-top: 40px;
+    @media (max-width: 425px) {
+      padding: 0 18px !important;
+    }
+  }
+  .responsiveBtn {
+    @media (max-width: 834px) {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 18px;
+    }
+    @media (max-width: 768px) {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 18px;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  .bgChangeresponsiveBtn {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+  }
+}
