@@ -9,11 +9,11 @@ const About = () => {
     <div className="about">
       <div className="container">
         <Row style={{ borderBottom: "1px solid rgba(122, 118, 118, 0.47)" }}>
-          <Col xxl={12} className="heading">
+          <Col xxl={12} xl={12} lg={12} md={24} className="heading">
             <h1>about.</h1>
             <p>I’m based in Hyderabad, India.</p>
           </Col>
-          <Col xxl={12} className="imageDiv">
+          <Col xxl={12} xl={12} lg={12} md={24} className="imageDiv">
             <img src={navtej} alt="navtej" />
           </Col>
         </Row>
@@ -60,10 +60,10 @@ const About = () => {
           </p>
         </div>
         <Row className="yodaAndText">
-          <Col xxl={12}>
+          <Col xxl={12} xl={12} lg={12}>
             <img src={yoda} alt="yoda" />
           </Col>
-          <Col xxl={12} className="facts">
+          <Col xxl={12} xl={12} lg={12} className="facts">
             <div className="heading">
               <h2>Random facts</h2>
             </div>

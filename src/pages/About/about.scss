@@ -13,6 +13,12 @@
       font-size: 90px;
       line-height: 100px;
       color: $blackColor;
+      @media (max-width: 425px) {
+        font-size: 80px;
+      }
+      @media (max-width: 320px) {
+        font-size: 70px;
+      }
     }
     p {
       font-family: $primary-font;
@@ -21,12 +27,27 @@
       font-size: 20px;
       line-height: 29px;
       color: $paraGraphColor;
+      @media (max-width: 1440px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   .imageDiv {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    @media (max-width: 834px) {
+      justify-content: center;
+      margin-top: 90px;
+    }
+    @media (max-width: 425px) {
+      img {
+        width: 80%;
+      }
+    }
   }
   .paragraphs {
     display: flex;
@@ -40,16 +61,40 @@
       font-size: 20px;
       line-height: 29px;
       color: $paraGraphColor;
+      @media (max-width: 1440px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   .yodaAndText {
     margin: 100px 0;
+    @media (max-width: 834px) {
+      flex-direction: column-reverse;
+    }
+    img {
+      width: 100%;
+      @media (max-width: 834px) {
+        width: 80%;
+        margin: 90px auto 0;
+
+        display: flex;
+        justify-content: center;
+      }
+    }
     .facts {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 30px;
       padding-left: 50px;
+      @media (max-width: 834px) {
+        padding-left: 0px;
+        text-align: center;
+      }
+
       .heading {
         h2 {
           font-family: $primary-font;

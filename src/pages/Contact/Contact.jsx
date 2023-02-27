@@ -18,7 +18,7 @@ const Contact = () => {
     <div className="contact">
       <div className="container">
         <Row justify="space-between">
-          <Col xxl={6} className="heading">
+          <Col xxl={6} xl={6} lg={8} md={12} className="heading">
             <h1>contact.</h1>
             <p>Get in touch with me via social media or email</p>
             <div className="socialIcons">
@@ -45,7 +45,7 @@ const Contact = () => {
               </Link>
             </div>
           </Col>
-          <Col xxl={12} className="imageDiv">
+          <Col xxl={12} xl={12} lg={12} md={12} className="imageDiv">
             <img src={navtej} alt="navtej" />
           </Col>
         </Row>
@@ -56,7 +56,7 @@ const Contact = () => {
           <Form layout="vertical" form={form} onFinish={handleOnSubmit}>
             <div className="formdiv">
               <Row className="innerForm" justify="space-between">
-                <Col xxl={11}>
+                <Col xxl={11} xl={11} lg={11} md={11}>
                   <Form.Item
                     label="Name"
                     name="name"
@@ -82,7 +82,7 @@ const Contact = () => {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col xxl={11}>
+                <Col xxl={11} xl={11} lg={11} md={11}>
                   <Form.Item
                     label="Message"
                     name="message"

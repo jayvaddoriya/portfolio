@@ -15,6 +15,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    @media (max-width: 834px) {
+      display: none;
+    }
   }
   .hamBurgerMenu {
     display: none;
@@ -80,16 +83,21 @@
   }
 }
 .drawerMenu {
+  background-color: $blackColor !important;
   .mobileNavLinks {
     padding: 0 44px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center !important;
     @media (max-width: 425px) {
       padding: 0 18px !important;
     }
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 60px;
+    }
     .navLink {
-      color: $blackColor;
+      color: $whiteColor;
       font-weight: 500 !important;
       font-size: 18px !important;
       border-bottom: 2px solid #eeeeee;
@@ -107,7 +115,7 @@
         font-size: 18px !important;
       }
       &:hover {
-        color: $primaryColor !important;
+        color: $whiteColor !important;
         font-weight: 500 !important;
         @media (max-width: 1024px) {
           font-size: 18px !important;
@@ -117,9 +125,9 @@
     .activeClassName {
       font-weight: 500 !important;
       font-size: 18px !important;
-      color: $primaryColor;
+      color: $whiteColor;
       border-bottom: 2px solid #eeeeee;
-      height: 50px;
+      height: 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
