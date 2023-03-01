@@ -7,12 +7,25 @@ import linkedin from "../../assets/png/linkedin.png";
 import medium from "../../assets/png/Mediumicon.png";
 import "./contact.scss";
 import { useForm } from "antd/es/form/Form";
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [form] = useForm();
   const handleOnSubmit = (values) => {
-    console.log(values);
-    form.resetFields();
+    emailjs
+      .send("service_70ad32m", "template_b613qrx", values, "vy_FxezavPe71pueb")
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.resetFields();
+          toast.success("Email send");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Somthing went wrong");
+        }
+      );
   };
   return (
     <div className="contact">

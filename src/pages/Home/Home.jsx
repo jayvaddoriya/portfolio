@@ -1,7 +1,7 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
 import "./home.scss";
-import navtej from "../../assets/png/Navtej.png";
+import navtej from "../../assets/png/doubleNavtej.png";
 import crafter from "../../assets/png/crafter.png";
 import medium from "../../assets/png/medium.png";
 
