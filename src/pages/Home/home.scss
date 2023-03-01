@@ -1,23 +1,44 @@
 @import "../../styles/globle.scss";
 
 .home {
-  .mainDiv {
+  .mainDivOfHome {
     position: relative;
     height: 600px !important;
     height: 100%;
-  }
-  @media (max-width: 1024px) {
-    height: 425px !important;
+    @media (max-width: 1024px) {
+      height: 425px !important;
+    }
+    @media (max-width: 425px) {
+      height: 230px !important;
+    }
+    @media (max-width: 390px) {
+      height: 180px !important;
+    }
   }
   .leftSide {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $primaryColor;
+    @media (max-width: 1024px) {
+      justify-content: flex-start;
+      padding-left: 60px;
+    }
+    @media (max-width: 834px) {
+      justify-content: flex-start;
+      padding-left: 30px;
+    }
+    @media (max-width: 425px) {
+      justify-content: flex-start;
+      padding-left: 18px;
+    }
     .contant {
       max-width: 40%;
       @media (max-width: 1440px) {
         max-width: 50%;
+      }
+      @media (max-width: 1024px) {
+        max-width: 66%;
       }
       h1 {
         font-family: $primary-font;
@@ -26,6 +47,21 @@
         line-height: 61px;
         color: $whiteColor;
         margin-bottom: 20px;
+        @media (max-width: 834px) {
+          font-size: 35px;
+        }
+        @media (max-width: 425px) {
+          font-size: 21px;
+          line-height: 18px;
+        }
+        @media (max-width: 390px) {
+          font-size: 18px;
+          line-height: 18px;
+        }
+        @media (max-width: 320px) {
+          font-size: 15px;
+          margin-bottom: 17px;
+        }
       }
       p {
         font-family: $primary-font;
@@ -33,6 +69,17 @@
         font-size: 18px;
         line-height: 23px;
         color: $whiteColor;
+        @media (max-width: 834px) {
+          font-size: 16px;
+        }
+        @media (max-width: 425px) {
+          font-size: 9px;
+          line-height: 14px;
+        }
+        @media (max-width: 390px) {
+          font-size: 7px;
+          line-height: 10px;
+        }
       }
     }
   }
@@ -40,10 +87,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1024px) {
+      justify-content: flex-end;
+      padding-right: 60px;
+    }
+    @media (max-width: 834px) {
+      justify-content: flex-end;
+      padding-right: 30px;
+    }
+    @media (max-width: 425px) {
+      justify-content: flex-end;
+      padding-right: 18px;
+    }
     .contant {
       max-width: 40%;
       @media (max-width: 1440px) {
         max-width: 50%;
+      }
+      @media (max-width: 1024px) {
+        max-width: 71%;
       }
       h1 {
         font-family: $primary-font;
@@ -51,6 +113,22 @@
         font-size: 42px;
         line-height: 61px;
         margin-bottom: 20px;
+        @media (max-width: 834px) {
+          font-size: 35px;
+        }
+        @media (max-width: 425px) {
+          font-size: 21px;
+          line-height: 18px;
+        }
+        @media (max-width: 390px) {
+          font-size: 18px;
+          line-height: 18px;
+        }
+        @media (max-width: 320px) {
+          font-size: 15px;
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
       }
       p {
         font-family: $primary-font;
@@ -58,6 +136,17 @@
         font-size: 18px;
         line-height: 23px;
         color: $paraGraphColor;
+        @media (max-width: 834px) {
+          font-size: 16px;
+        }
+        @media (max-width: 425px) {
+          font-size: 10px;
+          line-height: 14px;
+        }
+        @media (max-width: 390px) {
+          font-size: 8px;
+          line-height: 10px;
+        }
       }
     }
   }
@@ -69,11 +158,25 @@
     @media (max-width: 1440px) {
       left: 47%;
     }
+    @media (max-width: 1024px) {
+      width: 33%;
+      left: 47%;
+    }
+    @media (max-width: 834px) {
+      width: 37%;
+      left: 47%;
+    }
   }
   .latestWork {
     padding: 90px 0;
+    @media (max-width: 425px) {
+      padding: 60px 0 0;
+    }
     .innerCardDiv {
       padding: 90px 0 0;
+      @media (max-width: 834px) {
+        padding: 60px 0 0;
+      }
     }
     p {
       font-family: $primary-font;
@@ -82,6 +185,12 @@
       font-size: 20px;
       line-height: 23px;
       color: rgba(0, 0, 0, 0.58);
+      @media (max-width: 834px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 17px;
+      }
     }
     .border {
       border: 1px solid #d0cdcd;

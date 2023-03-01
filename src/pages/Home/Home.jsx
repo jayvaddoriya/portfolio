@@ -10,8 +10,8 @@ const { Meta } = Card;
 const Home = () => {
   return (
     <div className="home">
-      <Row className="mainDiv">
-        <Col xxl={12} xl={12} lg={12} className="leftSide">
+      <Row className="mainDivOfHome">
+        <Col xxl={12} xl={12} lg={12} md={12} xs={12} className="leftSide">
           <div className="contant">
             <h1>{`<product>`}</h1>
             <p>
@@ -22,7 +22,7 @@ const Home = () => {
           </div>
         </Col>
         <img src={navtej} alt="navtej" className="imageOfNavtej" />
-        <Col xxl={12} xl={12} lg={12} className="rightSide">
+        <Col xxl={12} xl={12} lg={12} md={12} xs={12} className="rightSide">
           <div className="contant">
             <h1>{`<movie buff>`}</h1>
             <p>
@@ -36,23 +36,23 @@ const Home = () => {
       <div className="latestWork">
         <div className="container">
           <Row>
-            <Col xxl={8} xl={8}>
+            <Col xxl={8} xl={8} lg={8} md={8}>
               <br className="border" />
             </Col>
-            <Col xxl={8} xl={8} style={{ textAlign: "center" }}>
+            <Col xxl={8} xl={8} lg={8} md={8} style={{ textAlign: "center" }}>
               <p>SOME OF MY LATEST WORK</p>
             </Col>
-            <Col xxl={8} xl={8}>
+            <Col xxl={8} xl={8} lg={8} md={8}>
               <br />
             </Col>
           </Row>
           <Row justify="space-around" className="innerCardDiv">
-            <Col xxl={11} xl={11} lg={11}>
+            <Col xxl={11} xl={11} lg={11} md={11}>
               <Card cover={<img alt="example" src={crafter} />}>
                 <Meta title="My UI design book" description="Book" />
               </Card>
             </Col>
-            <Col xxl={11} xl={11} lg={11}>
+            <Col xxl={11} xl={11} lg={11} md={11}>
               <Card
                 className="secondCard"
                 cover={<img alt="example" src={medium} />}
