@@ -1,9 +1,10 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
 import "./home.scss";
-import navtej from "../../assets/png/doubleNavtej.png";
+import navtej from "../../assets/png/NavtejDark.png";
 import crafter from "../../assets/png/crafter.png";
 import medium from "../../assets/png/medium.png";
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -35,33 +36,37 @@ const Home = () => {
       </Row>
       <div className="latestWork">
         <div className="container">
-          <Row>
+          <Row justify="space-between">
             <Col xxl={8} xl={8} lg={8} md={8}>
-              <br className="border" />
+              <div className="border" />
             </Col>
             <Col xxl={8} xl={8} lg={8} md={8} style={{ textAlign: "center" }}>
               <p>SOME OF MY LATEST WORK</p>
             </Col>
             <Col xxl={8} xl={8} lg={8} md={8}>
-              <br />
+              <div className="border" />
             </Col>
           </Row>
           <Row justify="space-around" className="innerCardDiv">
             <Col xxl={11} xl={11} lg={11} md={11}>
-              <Card cover={<img alt="example" src={crafter} />}>
-                <Meta title="My UI design book" description="Book" />
-              </Card>
+              <Link to="https://www.crafter.co.in/" target="_blank">
+                <Card cover={<img alt="example" src={crafter} />}>
+                  <Meta title="My UI design book" description="Book" />
+                </Card>
+              </Link>
             </Col>
             <Col xxl={11} xl={11} lg={11} md={11}>
-              <Card
-                className="secondCard"
-                cover={<img alt="example" src={medium} />}
-              >
-                <Meta
-                  title="Creating a lean design system"
-                  description="Design system"
-                />
-              </Card>
+              <Link to="https://medium.com/@navatejkumar.p" target="_blank">
+                <Card
+                  className="secondCard"
+                  cover={<img alt="example" src={medium} />}
+                >
+                  <Meta
+                    title="Creating a lean design system"
+                    description="Design system"
+                  />
+                </Card>
+              </Link>
             </Col>
           </Row>
         </div>

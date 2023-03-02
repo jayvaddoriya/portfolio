@@ -50,7 +50,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="icons">
-            <Link to="https://twitter.com/CrafterInc" target="_blank">
+            <Link to="https://twitter.com/Navatejkumar" target="_blank">
               <svg
                 width="24"
                 height="24"
@@ -65,7 +65,7 @@ const Navbar = () => {
               </svg>
             </Link>
             <Link
-              to="https://www.linkedin.com/company/crafter-inc/."
+              to="https://www.linkedin.com/in/navatejkumar/"
               target="_blank"
             >
               <svg
@@ -82,7 +82,7 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            <Link to="https://medium.com/@crafter-inc" target="_blank">
+            <Link to="https://medium.com/@navatejkumar.p" target="_blank">
               <svg
                 width="23"
                 height="23"
@@ -160,7 +160,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <div className="icons">
-              <Link to="https://twitter.com/CrafterInc" target="_blank">
+              <Link to="https://twitter.com/Navatejkumar" target="_blank">
                 <svg
                   width="24"
                   height="24"
@@ -175,7 +175,7 @@ const Navbar = () => {
                 </svg>
               </Link>
               <Link
-                to="https://www.linkedin.com/company/crafter-inc/."
+                to="https://www.linkedin.com/in/navatejkumar/"
                 target="_blank"
               >
                 <svg
@@ -192,7 +192,7 @@ const Navbar = () => {
                 </svg>
               </Link>
 
-              <Link to="https://medium.com/@crafter-inc" target="_blank">
+              <Link to="https://medium.com/@navatejkumar.p" target="_blank">
                 <svg
                   width="23"
                   height="23"
