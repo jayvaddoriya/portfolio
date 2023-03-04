@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
+import { Helmet } from "react-helmet";
 import navtej from "../../assets/png/Navtej.png";
 import yoda from "../../assets/png/yoda.png";
 import "./about.scss";
@@ -7,6 +8,13 @@ import "./about.scss";
 const About = () => {
   return (
     <div className="about">
+      <Helmet>
+        <title>About Me - Navatej Kumar </title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Get to know me better! I am Navatej Kumar -, and this page contains information about my background, skills, and interests."
+      />
       <div className="container">
         <Row style={{ borderBottom: "1px solid rgba(122, 118, 118, 0.47)" }}>
           <Col xxl={12} xl={12} lg={12} md={24} className="heading">

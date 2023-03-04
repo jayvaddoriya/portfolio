@@ -5,12 +5,20 @@ import navtej from "../../assets/png/NavtejDark.png";
 import crafter from "../../assets/png/crafter.png";
 import medium from "../../assets/png/medium.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const { Meta } = Card;
 
 const Home = () => {
   return (
     <div className="home">
+      <Helmet>
+        <title>Navatej Kumar - Personal Website</title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Welcome to my personal website. I am Navatej Kumar, and this website serves as a platform to share my thoughts, experiences, and interests with you."
+      />
       <Row className="mainDivOfHome">
         <Col xxl={12} xl={12} lg={12} md={12} xs={12} className="leftSide">
           <div className="contant">

@@ -10,6 +10,7 @@ import { useForm } from "antd/es/form/Form";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+import { Helmet } from "react-helmet";
 
 let schema = yup.object().shape({
   name: yup.string().required("Please enter your name"),
@@ -42,6 +43,13 @@ const Contact = () => {
   };
   return (
     <div className="contact">
+      <Helmet>
+        <title>Contact Me - Navatej Kumar</title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Feel free to get in touch with me through this contact form or my social media channels. I would love to hear from you!"
+      />
       <div className="container">
         <Row justify="space-between">
           <Col xxl={6} xl={6} lg={8} md={12} className="heading">
