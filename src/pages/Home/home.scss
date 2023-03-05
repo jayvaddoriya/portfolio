@@ -27,12 +27,7 @@
       height: 100%;
       position: absolute;
       left: 0;
-      z-index: 2;
-      transition: all 0.5s;
-    }
-    &:hover::after {
-      width: 200%;
-      z-index: 5;
+      transition: all 0.5s ease-in-out;
     }
 
     @media (max-width: 1024px) {
@@ -98,6 +93,38 @@
         }
       }
     }
+    .imageOfNavtej {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      right: -46%;
+      width: 51%;
+      transform: translate(-50%, 0%);
+      @media (max-width: 1440px) {
+        width: 64%;
+        right: -58%;
+      }
+      @media (max-width: 1024px) {
+        width: 65%;
+        right: -60%;
+      }
+      @media (max-width: 834px) {
+        width: 74%;
+        right: -67%;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 200%;
+        z-index: 5;
+      }
+      .contant {
+        z-index: 6;
+      }
+      .imageOfNavtej {
+        z-index: 6;
+      }
+    }
   }
   .rightSide {
     display: flex;
@@ -105,7 +132,6 @@
     justify-content: center;
     transition: all 0.5s ease-in-out;
     position: relative;
-    z-index: 2;
     &::before {
       content: "";
       background-color: #fff;
@@ -113,11 +139,7 @@
       height: 100%;
       position: absolute;
       right: 0;
-      z-index: 9;
       transition: all 0.5s;
-    }
-    &:hover::before {
-      width: 200%;
     }
 
     @media (max-width: 1024px) {
@@ -135,7 +157,6 @@
     .contant {
       max-width: 40%;
       position: relative;
-      z-index: 99;
       @media (max-width: 1440px) {
         max-width: 50%;
       }
@@ -184,27 +205,37 @@
         }
       }
     }
+    .navtej {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 52%;
+      width: 53%;
+      transform: translate(-50%, 0%);
+      @media (max-width: 1440px) {
+        width: 67%;
+        left: -6%;
+      }
+      @media (max-width: 1024px) {
+        width: 68%;
+        left: -5%;
+      }
+      @media (max-width: 834px) {
+        width: 77%;
+        left: -7%;
+      }
+    }
+
+    &:hover {
+      &::before {
+        width: 200%;
+      }
+      .navtej {
+        z-index: 10;
+      }
+    }
   }
-  .imageOfNavtej {
-    position: absolute;
-    z-index: 99;
-    bottom: 0;
-    left: 46.7%;
-    width: 26%;
-    transform: translate(-50%, 0%);
-    @media (max-width: 1440px) {
-      width: 34%;
-      left: 45.7%;
-    }
-    @media (max-width: 1024px) {
-      width: 33%;
-      left: 45.7%;
-    }
-    @media (max-width: 834px) {
-      width: 37%;
-      left: 45.3%;
-    }
-  }
+
   .latestWork {
     padding: 90px 0;
     @media (max-width: 425px) {

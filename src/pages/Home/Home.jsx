@@ -2,6 +2,7 @@ import { Card, Col, Row } from "antd";
 import React from "react";
 import "./home.scss";
 import navtej from "../../assets/png/NavtejDark.png";
+import navtejL from "../../assets/png/Navtej.png";
 import crafter from "../../assets/png/crafter.png";
 import medium from "../../assets/png/medium.png";
 import { Link } from "react-router-dom";
@@ -29,8 +30,8 @@ const Home = () => {
               that meet customer needs and business goals.
             </p>
           </div>
+          <img src={navtej} alt="navtej" className="imageOfNavtej" />
         </Col>
-        <img src={navtej} alt="navtej" className="imageOfNavtej" />
         <Col xxl={12} xl={12} lg={12} md={12} xs={12} className="rightSide">
           <div className="contant">
             <h1>{`<movie buff>`}</h1>
@@ -40,6 +41,7 @@ const Home = () => {
               often engage in discussions and debates about movies
             </p>
           </div>
+          <img src={navtejL} alt="navtej" className="navtej" />
         </Col>
       </Row>
       <div className="latestWork">
