@@ -61,7 +61,7 @@ const Home = () => {
             <Col xxl={11} xl={11} lg={11} md={11}>
               <Link to="https://www.crafter.co.in/" target="_blank">
                 <Card cover={<img alt="example" src={crafter} />}>
-                  <Meta title="My UI design book" description="Book" />
+                  <Meta title="Crafter" description="" />
                 </Card>
               </Link>
             </Col>
@@ -71,10 +71,7 @@ const Home = () => {
                   className="secondCard"
                   cover={<img alt="example" src={medium} />}
                 >
-                  <Meta
-                    title="Creating a lean design system"
-                    description="Design system"
-                  />
+                  <Meta title="My personal blog" description="" />
                 </Card>
               </Link>
             </Col>
