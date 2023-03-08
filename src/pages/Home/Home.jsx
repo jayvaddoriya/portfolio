@@ -16,6 +16,7 @@ const Home = () => {
       <Helmet>
         <title>Navatej Kumar - Personal Website</title>
       </Helmet>
+      <meta property="og:title" content="Navatej Portfolio" />
       <meta
         name="description"
         content="Welcome to my personal website. I am Navatej Kumar, and this website serves as a platform to share my thoughts, experiences, and interests with you."
